@@ -1,0 +1,44 @@
+.dateIntervalPicker {
+	position: absolute;
+	float: left;
+	padding: 0px 10px;
+	color: black;
+	display: none;
+	border: 1px solid #AAA;
+	background-color: rgb(246, 246, 246);
+	margin-top: 5px;
+}
+
+.dateIntervalPicker .shotcutPicker {
+	cursor: pointer;
+}
+
+.dateIntervalPicker .lastShotcutPicker {
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+.dateIntervalPicker a {
+	padding: 0 5px;
+}
+
+.dateIntervalPicker .input {
+	height: 20px;
+	padding: 1px;
+	width: 23px;
+}
+
+.dateIntervalPicker .input input {
+	cursor: pointer;
+	background-position: 95% 50%;
+	height: 14px;
+	line-height: 14px;
+	width: 79px;
+	background-image: url('image/riqixuanze_jiantou.png');
+	background-repeat: no-repeat;
+	margin:4px 0px;
+}
+
+.dateIntervalPicker .okBtn,.cancleBtn {
+	padding-left : 10px;
+}

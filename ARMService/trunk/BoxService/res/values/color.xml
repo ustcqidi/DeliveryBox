@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_skyblue">#5894e2</color>
+    <color name="txt_dialog_content">#4b4b4b</color>
+    <color name="bg_list_divider">#c9c9c9</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="black">#101010</color>
+    <color name="green">#2baf2b</color>
+
+</resources>

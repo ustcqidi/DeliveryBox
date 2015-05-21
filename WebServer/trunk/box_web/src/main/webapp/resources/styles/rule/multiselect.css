@@ -1,0 +1,8 @@
+.ui-multiselect {
+	height: 30px;
+}
+
+.ui-multiselect-menu input[type="checkbox"] {
+	margin-top: -3px;
+	margin-right: 5px;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:applicationContext.xml</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Filter -->
+	<filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>
+            com.ustc.box.core.filter.EncodingFilter
+        </filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    
+    <servlet>  
+        <servlet-name>coreServlet</servlet-name>  
+        <servlet-class>  
+            com.ustc.box.main.web.MainServlet  
+        </servlet-class>  
+    </servlet>  
+  
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>coreServlet</servlet-name>  
+        <url-pattern>/do</url-pattern>  
+    </servlet-mapping>
+    
+     <servlet>  
+        <servlet-name>boxRegisterServlet</servlet-name>  
+        <servlet-class>  
+            com.ustc.box.main.web.RegisterServlet  
+        </servlet-class>  
+    </servlet>  
+  
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>boxRegisterServlet</servlet-name>  
+        <url-pattern>/register</url-pattern>  
+    </servlet-mapping>
+    
+     <servlet>  
+        <servlet-name>PcTakeServlet</servlet-name>  
+        <servlet-class>  
+            com.ustc.box.main.web.PcTakeServlet  
+        </servlet-class>  
+    </servlet>  
+  
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>PcTakeServlet</servlet-name>  
+        <url-pattern>/helptake</url-pattern>  
+    </servlet-mapping>
+    
+    
+    
+    <servlet>  
+        <servlet-name>payServlet</servlet-name>  
+        <servlet-class>  
+            com.ustc.box.main.web.NotifyServlet  
+        </servlet-class>  
+    </servlet>  
+  
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>payServlet</servlet-name>  
+        <url-pattern>/notify</url-pattern>  
+    </servlet-mapping>
+    
+    
+    
+         <servlet>  
+        <servlet-name>uploadServlet</servlet-name>  
+        <servlet-class>  
+            com.ustc.box.main.web.UploadServlet  
+        </servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>uploadServlet</servlet-name>  
+        <url-pattern>/upload</url-pattern>  
+    </servlet-mapping>
+    
+</web-app>

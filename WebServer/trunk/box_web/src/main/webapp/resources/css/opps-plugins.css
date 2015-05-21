@@ -1,0 +1,194 @@
+/** custom loadmask style*/
+.loadmask {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5) !important;
+	width: 100%;
+	height: 100%;
+	zoom: 1;
+	width: 100%;
+}
+
+.loadmask-msg {
+	z-index: 20001;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0 !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+
+.loadmask-msg div {
+	margin-top: 14px;
+	padding: 21px !important;
+	background: url('./images/load.gif') no-repeat 5px 5px !important;
+	background-color: transparent !important;
+	border: 0 !important;
+	color: #ffffff !important;
+	font: normal 11px tahoma, arial, helvetica, sans-serif;
+	cursor: wait;
+	line-height: 16px;
+}
+
+.masked {
+	overflow: hidden !important;
+}
+
+.masked-relative {
+	position: relative !important;
+}
+
+.masked-hidden {
+	visibility: hidden !important;
+}
+/** custom loadmask style end */
+
+/** uploadImage */
+.imgs-upload-wrap {
+	position: relative;
+	border: 1px dotted #ccc;
+	background-color: #fff;
+	display : table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.imgs-upload-wrap .imgs-upload-btn {
+	display : inline-block;
+	margin : 5px;
+	cursor : pointer;
+	border : 1px solid #ccc;
+	border-radius: 3px;
+	background-image: url(./images/upload-multi.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+	vertical-align: middle;
+}
+
+.img-upload-wrap {
+	position: relative;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: url(./images/upload.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.imgs-upload-wrap .img-upload-wrap{
+	display : inline-block;
+	background-image : none;
+	vertical-align: middle;
+	margin-right : 2px;
+	margin-left : 2px;
+	margin-top : 0;
+	margin-bottom : 0;
+	border : 0;
+}
+
+.img-upload-wrap.disabled{
+	background-image: none;
+}
+
+.uploadify-queue {
+	position: fixed;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	height: 120px;
+	z-index : 1000;
+	display : none;
+}
+
+.img-upload-wrap img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: #FFF;
+}
+
+.img-upload-wrap .clear {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
+		endColorstr=#99000000 );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	z-index: 10;
+	display: none;
+}
+
+.img-upload-wrap .clear button {
+	margin: 0 auto;
+	display: block;
+}
+
+/** uploadFile */
+.upload-file {
+	border : 1px solid #ccc;
+	background-color: #fff;
+	display : inline-block;
+	position : relative;
+	left : 0;
+	top : 0;
+	margin : 0;	
+	vertical-align: middle;
+	border-radius: 3px;
+	height : 30px;
+	text-align : left;
+	overflow:hidden;
+}
+.upload-file .upload-file-btn {
+	background-color: #fff;
+	background-image: url(./images/upload.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border : 0;
+}
+.upload-file:hover .upload-file-btn {
+	background-color: #fff;
+	background-image: url(./images/upload.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border : 0;
+}
+.upload-file .loadmask-msg {
+    z-index: 20001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:0;
+    padding:0;
+}
+.upload-file .loadmask-msg div {
+	margin : 0 !important;
+    padding:5px 10px 5px 25px !important;
+    background: #fbfbfb url(./images/loading.gif) no-repeat 5px 5px !important;
+    line-height: 16px !important;
+	border:1px solid #a3bad9 !important;
+    color:#222 !important;
+    font:normal 11px tahoma, arial, helvetica, sans-serif !important;
+    cursor:wait !important;
+}
+
+/** dataTable */
+.dataTables_wrapper table {
+	table-layout: fixed;
+}
+
+/** channel dialog */
+.select-all {
+	font-weight: bold;
+}
+
+.select-toggle {
+	font-weight: bold;
+}

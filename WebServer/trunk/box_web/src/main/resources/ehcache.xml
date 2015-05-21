@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="myCache">
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120" />
+		
+	 <diskStore path="java.io.tmpdir"/>
+		
+	 <cache name="configCache" maxElementsInMemory="10000" eternal="true"
+		 overflowToDisk="true" />
+		
+	<cache name="validateCodeCache" maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="300" overflowToDisk="true" />
+		
+</ehcache>

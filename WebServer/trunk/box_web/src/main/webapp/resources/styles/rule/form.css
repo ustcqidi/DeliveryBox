@@ -1,0 +1,44 @@
+form {
+	border: solid #DDDDDD 1px;
+	border-bottom: 0;
+	width: 80%;
+}
+
+.form-horizontal .control-group {
+	border-bottom: 1px solid #DDDDDD;
+	padding: 10px 20px 10px 0px;
+	margin: 0;
+}
+
+.form-horizontal .control-group .controls {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.form-horizontal .control-group .controls .checkbox {
+	margin : 0 5px 0 5px;
+}
+
+.form-horizontal #btns {
+	border-bottom: 1px solid #DDDDDD;
+	padding: 10px 20px 10px 0px;
+	margin: 0;
+	text-align: center;
+}
+
+.ui-multiselect {
+	height: 30px;
+}
+
+.ui-multiselect-menu input[type="checkbox"] {
+	margin-top: -3px;
+	margin-right: 5px;
+}
+
+div[class="tooltip-inner"] {
+    max-width: 60px;
+}
+span.help-inline {
+    color: #FF0000;
+}

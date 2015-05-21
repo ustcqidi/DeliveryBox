@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<excludes>
+		<pattern>/resources/*</pattern>
+		<pattern>login.do</pattern>
+	</excludes>
+	
+	<decorator name="index" page="menu.jsp">
+          <pattern>/auth/*</pattern>
+           <pattern>/biz/*</pattern>
+            <pattern>/phone/*</pattern>
+           <pattern>/dashboard.do</pattern>
+    </decorator> 
+    
+ 
+
+	<!-- <decorator name="loginAndRegister" page="loginDefault.jsp">
+		<pattern>/login</pattern>
+		<pattern>/register</pattern>
+	</decorator> -->
+<!-- 	<decorator name="default" page="default.jsp">
+		<pattern>*.do</pattern>
+	</decorator> -->
+</decorators>

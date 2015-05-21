@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- <annotation-driven /> -->
+	<context:component-scan base-package="com.mywork.**.controller" />
+	
+	<mvc:annotation-driven />
+	<!-- <context:annotation-config /> -->
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- <bean
+		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="order" value="1" />
+		<property name="ignoreAcceptHeader" value="true" />
+		<property name="mediaTypes">
+			<map>
+				<entry key="xml" value="application/xml" />
+				<entry key="json" value="application/json" />
+			</map>
+		</property>
+		<property name="viewResolvers">
+			<list>
+				<bean
+					class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+				<bean
+					class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="prefix" value="/WEB-INF/views/" />
+					<property name="suffix" value=".jsp" />
+				</bean>
+			</list>
+		</property>
+		<property name="defaultViews">
+			<list>
+				<bean id="xmlView"
+					class="org.springframework.web.servlet.view.xml.MarshallingView">
+					<property name="marshaller" ref="jaxb" />
+				</bean>
+				<bean id="jsonView"
+					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
+			</list>
+		</property>
+	</bean>
+	<bean id="xstreamMarshaller"
+		class="org.springframework.oxm.xstream.XStreamMarshaller">
+	</bean>
+	<bean id="jaxb" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+		<property name="classesToBeBound">
+			<list>
+				<value>java.util.ArrayList</value>
+				<value>com.iflytek.ossp.app.test.bo.User</value>
+			</list>
+		</property>
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="2" />
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean> -->
+
+	<!-- <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 
+		<property name="messageConverters"> <list> <ref bean="stringHttpMessageConverter" 
+		/> <ref bean="jsonHttpMessageConverter" /> <ref bean="marshallingHttpMessageConverter" 
+		/> </list> </property> </bean> <bean id="stringHttpMessageConverter" 
+		class="org.springframework.http.converter.StringHttpMessageConverter" /> 
+		<bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" 
+		/> <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter"> 
+		<constructor-arg ref="jaxbMarshaller" /> <property name="supportedMediaTypes" 
+		value="application/xml"/> </bean> <bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"> 
+		<property name="classesToBeBound"> <list> <value>java.util.ArrayList</value> 
+		<value>com.iflytek.ossp.app.test.bo.User</value> </list> 
+		</property> </bean> -->
+
+	<!-- Only needed because we require fileupload in the org.springframework.samples.mvc.fileupload 
+		package -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+		
+	<!-- <bean id="conversionService"
+      class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/> -->
+  <!--   <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="registerDefaultFormatters" value="false" />
+        <property name="formatters">
+        <set>
+            <bean class="org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory" />
+            <bean class="org.springframework.format.number.NumberFormatAnnotationFormatterFactory" />
+        </set>
+        </property>
+        <property name="formatterRegistrars">
+        <set>
+          <bean class="org.springframework.format.datetime.joda.JodaTimeFormatterRegistrar">
+              <property name="dateFormatter">
+                  <bean class="org.springframework.format.datetime.joda.DateTimeFormatterFactoryBean">
+                      <property name="pattern" value="yyyyMMdd"/>
+                  </bean>
+              </property>
+          </bean>
+      </set>
+      </property>
+    </bean>
+ -->
+	
+
+
+</beans>

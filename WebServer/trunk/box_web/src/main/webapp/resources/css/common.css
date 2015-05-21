@@ -1,0 +1,213 @@
+
+label.field {
+	width: 80px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.right{
+	width: 97%;
+	margin: 0 auto;
+}
+
+.btn-bar button {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.hide, .hidden {
+	display: none;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.inline {
+	display: inline-block;
+}
+
+/* .dataTables_wrapper table {
+	table-layout: fixed;
+} */
+
+/**消除当前焦点虚框 */
+:focus, :active {
+	outline: 0 !important;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-bar, .btn-line {
+	margin-bottom: 10px;
+}
+
+.form-inline {
+	overflow: hidden;
+}
+
+.form-inline .control-group label {
+	width: auto;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.form-horizontal .controls {
+	margin-left: 90px;
+}
+
+@media ( max-width : 480px) {
+	.form-inline .control-group label {
+		width: 80px;
+		text-align: left;
+		float: none;
+	}
+	.form-horizontal .controls {
+		margin-left: 0px;
+	}
+}
+
+.form-horizontal .control-label {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.radio.inline, .checkbox.inline {
+	margin-left: 0px !important;
+	/*margin-right: 10px;*/
+}
+
+label span.help-inline {
+	color: #FF0000;
+}
+
+.form-inline .control-group {
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.form-btns {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.form-btns button, .form-btns input {
+	margin-right: 15px;
+}
+
+.form-inline .pull-right button {
+	margin-right: 15px;
+}
+
+.control-group .controls button {
+	margin-right: 15px;
+}
+
+.uploadify {
+	display: inline-block;
+	margin: auto 10px;
+}
+
+.input-text-medium {
+	width: 140px;
+}
+
+.toolbar {
+	margin: 10px 0px;
+}
+
+.toolbar button, .toolbar input {
+	margin: auto 10px;
+}
+
+.select-all {
+	font-weight: bold;
+}
+
+.date-picker, .Wdate {
+	cursor: pointer !important;
+}
+
+/*dialog*/
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #aaaaaa;
+	opacity: .3;
+	filter: Alpha(Opacity = 30);
+}
+
+/*multiselect*/
+.ui-multiselect {
+	height: 30px;
+	margin-right: 0 !important;
+}
+
+.ui-multiselect-menu input[type="checkbox"] {
+	margin-top: -3px;
+	margin-right: 5px;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	text-align: right;
+}
+
+.ui-dialog-buttonset .ui-button:nth-child(1) {
+	color: #ffffff;
+	background-color: #0064cd;
+	background-repeat: repeat-x;
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb),
+		to(#0064cd));
+	background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+	background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb),
+		color-stop(100%, #0064cd));
+	background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+	background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+	background-image: linear-gradient(top, #049cdb, #0064cd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#049cdb',
+		endColorstr='#0064cd', GradientType=0);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border-color: #0064cd #0064cd #003f81;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#operator .checkbox {
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	padding-left: 150px;
+}
+
+.back_div .ui-multiselect {
+	margin-right: 30px !important;
+}
+
+#query {
+	margin-top: 10px;
+}
+
+.msg_font_bold_blue {
+	text-decoration: none;
+}
+.dataTables_length select{
+	width: 80px;
+}
+/* .dataTables_wrapper{
+	overflow: scroll;
+} */
+/* .table{
+	table-layout: fixed;
+}*/
+.table tr>th,.table tr>td{
+	text-align: center;
+	vertical-align: middle;
+} 

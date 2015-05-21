@@ -1,0 +1,104 @@
+.btn-right {
+	margin-right: 5px;
+}
+
+.btn-img-right {
+	margin-right: 5px;
+}
+
+.btn-form-right {
+	margin-right: 0px;
+}
+
+.img-right {
+	margin-right: 0px;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #aaaaaa;
+	opacity: .3;
+	filter: Alpha(Opacity = 30);
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+label.control-label {
+	margin-left: 5px;
+}
+
+#panelHelptooltip table td {
+	font-family: 微软雅黑;
+	color: #4572A7;
+	width: 130px;
+	height: 37px;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+#panelHelptooltip table td:nth-of-type(2) {
+	text-align: left;
+}
+
+#panelHelptooltip {
+	margin-bottom: 0px;
+}
+
+.dateIntervalPicker {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#panelHelptooltip table td+td {
+	color: Black;
+	width: 330px;
+}
+
+#panelHelptooltip table td span {
+	overflow: auto;
+	white-space: pre-line;
+}
+
+img#helptooltip {
+	cursor: help;
+	vertical-align: middle;
+}
+
+div[class="accordion alert-info"] {
+	font-size: 14px;
+	border-color: #bce8f1;
+}
+
+.datatable-bottom {
+	height: 40px;
+}
+
+.dataTables_info {
+	clear: none;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#panelHelptooltip table {
+	height: 400px;
+	margin-left: 25px;
+}
+
+

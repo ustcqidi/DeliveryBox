@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ustc.deliverybox.service"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:name="com.ustc.deliverybox.service.DeliveryBox"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ustc.deliverybox.service.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ustc.deliverybox.register.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ustc.deliverybox.service.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ustc.deliverybox.activity.OpenBoxActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <service android:name="com.ustc.deliverybox.service.RequestService" />
+        <service android:name="com.ustc.deliverybox.service.CheckUpdateService" />
+        <service android:name="com.ustc.deliverybox.service.DownloadService" />
+        <service
+            android:name="com.ustc.deliverybox.service.DeliveryBoxSocket"
+            android:process=":DeliveryBoxDaemon" >
+        </service>
+
+        <receiver android:name="com.ustc.deliverybox.service.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="11"
+        tools:ignore="OldTargetApi,ManifestOrder" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODE_WORLD_READABLE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODE_WORLD_WRITEABLE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+
+</manifest>

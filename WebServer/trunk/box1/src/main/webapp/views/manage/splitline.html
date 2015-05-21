@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link href="../../resources/css/style1.css" rel="stylesheet"  type="text/css"/>
+<script type="text/javascript">
+function show_hide_left(){
+	var temp=window.top.midFrame.cols;
+	if(temp=="0,7,*"){
+		window.top.midFrame.cols="219,7,*";
+		document.all.splitPicture.src="../../resources/images/line.jpg";　
+	}else{
+		window.top.midFrame.cols="0,7,*";
+		document.all.splitPicture.src="../../resources/images/lineArea.jpg";　
+	}
+}
+</script>
+</head>
+<body>
+ <div id="split" style=" padding-top:200px;" >
+                <p>
+                    <img  src="../../resources/images/line.jpg" alt="分割图片"
+                          id="splitPicture"  onClick="show_hide_left();"/>
+                </p>
+  </div>
+</body>
+</html>
